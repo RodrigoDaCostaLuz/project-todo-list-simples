@@ -2,60 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:'Courier New', Courier, monospace;
-  color: rgb(0, 0, 0);
-}
-.container-geral{
-  max-width: 450px;
-  margin: 3rem auto 0;
-  background-color: #fdfdfd;
-  padding: 1.5rem;
-  border-radius: 15px;
-}
-.container-geral header {
-  text-align: center;
-  padding: 0 1rem 1rem;
-  border-bottom: 1px solid #ccc;
-}
-#criar-tarefa {
-  background-color:white;
-  color: red;
-  border: 2px solid black;
-  padding: .3rem .6rem;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
+ }
 
-#apaga-tudo {
-  background-color:white;
-  color: red;
-  border: 2px solid black;
-  padding: .3rem .6rem;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
-
-#remover-finalizados {
-  background-color:white;
-  color: red;
-  border: 2px solid black;
-  padding: .3rem .6rem;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
-
-
-
+ .completed {
+  text-decoration: line-through solid black;
+ }
 

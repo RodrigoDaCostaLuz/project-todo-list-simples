@@ -9,6 +9,7 @@ const addNovaTarefa = () => {
   addTarefa.classList.add('nova-tarefa');
   addTarefa.innerHTML = inputTextoTarefa.value;
   listaTarefas.appendChild(addTarefa);
+  inputTextoTarefa.value = '';
 };
 
 window.onload = () => {

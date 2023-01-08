@@ -11,8 +11,6 @@ const addNovaTarefa = () => {
   listaTarefas.appendChild(addTarefa);
 };
 
-btnCriarTarefa.addEventListener('click', addNovaTarefa);
-
 window.onload = () => {
-  addNovaTarefa();
+  btnCriarTarefa.addEventListener('click', addNovaTarefa);
 };

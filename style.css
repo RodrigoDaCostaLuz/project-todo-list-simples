@@ -10,11 +10,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    90deg,
-    rgba(65, 184, 131, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(65, 184, 131, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
 }
 
 header p {

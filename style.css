@@ -10,9 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg,
-      rgba(65 , 184 , 131 , 1) 0%,
-      rgba(0 , 212 , 255 , 1) 100%);
+  background: linear-gradient(90deg,rgba(65 , 184 , 131 , 1) 0%,rgba(0 , 212 , 255 , 1) 100%);
 }
 
 header p {
@@ -33,7 +31,7 @@ header p {
   background-color: azure;
   padding: 60px 30px;
   border-radius: 5px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0 , 0 , 0 , 0.3);
   display: flex;
 }
 
@@ -69,7 +67,7 @@ header p {
   padding: 30px 20px;
   margin-top: 60px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0 , 0 , 0 , 0.3);
   width: 100%;
 }
 

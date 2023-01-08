@@ -1,12 +1,18 @@
 // Seleção de Elementos
 const inputTextoTarefa = document.getElementById('texto-tarefa');
-const btnCriarTarefa = document.getElementById('#criar-tarefa');
+const btnCriarTarefa = document.getElementById('criar-tarefa');
+const listaTarefas = document.getElementById('lista-tarefas');
 
-// Funções
-const validaInput = () => inputTextoTarefa.value.trim().length > 0;
+// add nova tarefa (li)
+const addNovaTarefa = () => {
+  const addTarefa = document.createElement('li');
+  addTarefa.classList.add('nova-tarefa');
+  addTarefa.innerHTML = inputTextoTarefa.value;
+  listaTarefas.appendChild(addTarefa);
+};
 
-// Eventos
+btnCriarTarefa.addEventListener('click', addNovaTarefa);
 
 window.onload = () => {
-  validaInput();
+  addNovaTarefa();
 };

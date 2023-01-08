@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body {
   height: 100vh;
   display: flex;
@@ -15,27 +16,31 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 }
+
 header p {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
 }
+
 #container-main {
-  padding:60px 10px;
+  padding: 60px 10px;
   border: 2px solid darkgreen;
   width: 60%;
   /* min-width: 500px; */
 }
+
 #container-add-tarefa {
   /* align-items: center; */
-  box-sizing:border-box;
+  box-sizing: border-box;
   background-color: #fff9ff;
   padding: 60px 30px;
   border-radius: 5px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   display: flex;
 }
+
 #texto-tarefa {
   flex: 3;
   font-size: 1rem;
@@ -43,10 +48,12 @@ header p {
   border-radius: 12px;
   font-weight: 500;
 }
+
 #texto-tarefa input:focus {
   outline: none;
   border-color: green;
 }
+
 #criar-tarefa {
   flex: 1;
   border-radius: 5px;
@@ -60,12 +67,13 @@ header p {
   margin-left: 12px;
   cursor: pointer;
 }
+
 #container-lista {
   background-color: azure;
   padding: 30px 20px;
   margin-top: 60px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 

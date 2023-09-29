@@ -1,10 +1,7 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# To-Do List Simples
+
+Este projeto desenvolve uma aplicação de To-Do List simples, permitindo a criação de uma lista de tarefas, marcando-as como completas e deletando-as.
+
+## Origem e Desenvolvimento
+
+Este projeto foi concebido como parte do curso de Desenvolvimento Web da TRYBE, no âmbito do Módulo de Fundamentos do Desenvolvimento Web. Inicialmente, foi um projeto bônus do referido módulo. Posteriormente, foram realizadas diversas modificações, principalmente na estilização, para aprimorar a experiência do usuário. A versão final é disponibilizada neste repositório no meu espaço no GitHub.

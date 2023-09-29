@@ -1,19 +1,42 @@
-// Seleção de Elementos
-const inputTextoTarefa = document.getElementById('texto-tarefa');
-const btnCriarTarefa = document.getElementById('criar-tarefa');
-const listaTarefas = document.getElementById('lista-tarefas');
+const addButton = document.getElementById('criar-tarefa');
+const inputTask = document.getElementById('texto-tarefa');
+const list = document.getElementById('lista-tarefas');
+const deleteButton = document.getElementById('apaga-tudo');
 
-// add nova tarefa (li)
-const addNovaTarefa = () => {
-  btnCriarTarefa.addEventListener('click', () => {
-    const addTarefa = document.createElement('li');
-    addTarefa.classList.add('nova-tarefa');
-    addTarefa.innerHTML = inputTextoTarefa.value;
-    listaTarefas.appendChild(addTarefa);
-    inputTextoTarefa.value = '';
-  });
+const addTask = () => {
+  const listItem = document.createElement('li');
+  if (inputTask.value.length === 0) {
+    window.alert('Você deve inserir um texto');
+  } else {
+    listItem.classList.add('item');
+    listItem.innerText = inputTask.value;
+    list.appendChild(listItem);
+    inputTask.value = '';
+  }
 };
 
-window.onload = () => {
-  addNovaTarefa();
+addButton.addEventListener('click', addTask);
+
+const selectItem = (event) => {
+  const selectedItem = document.getElementsByClassName('selected')[0];
+  const clickedItem = event.target;
+  if (selectedItem) {
+    selectedItem.classList.remove('selected');
+  }
+  clickedItem.classList.add('selected');
 };
+list.addEventListener('click', selectItem);
+
+const riskItem = (event) => {
+  const clickedItem = event.target;
+
+  clickedItem.classList.toggle('completed');
+};
+list.addEventListener('dblclick', riskItem);
+
+const deleteList = () => {
+  list.innerHTML = '';
+};
+deleteButton.addEventListener('click', deleteList);
+
+// const deleteCompleted = () => {};
